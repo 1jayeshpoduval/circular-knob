@@ -73,7 +73,7 @@ export default function Home() {
         ref={knobRef}
         className={`before:rounded-full ${
           isKnobHovered || isKnobDragged ? "before:hidden" : "before:block"
-        } before:absolute before:-inset-2 before:border-2 active:cursor-grabbing before:border-foreground before:size-24  before:content-['']  size-20 relative cursor-grab relative z-20 rounded-full bg-foreground flex items-start justify-center`}
+        } before:absolute before:-inset-2 before:border-2 active:cursor-grabbing before:border-foreground before:size-24  before:content-['']  size-20 cursor-grab relative z-20 rounded-full bg-foreground flex items-start justify-center`}
         onPointerEnter={() => setIsKnobHovered(true)}
         onPointerLeave={() => setIsKnobHovered(false)}
         onPointerDown={handlePointerDown}
